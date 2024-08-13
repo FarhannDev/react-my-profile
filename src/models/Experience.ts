@@ -1,4 +1,4 @@
-interface Experience {
+export interface Experience {
   company: string;
   job: string;
   location: string;
@@ -26,4 +26,4 @@ const experience: Experience[] = [
   },
 ];
 
-export default experience;
+export { experience };
