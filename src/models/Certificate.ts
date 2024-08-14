@@ -1,4 +1,4 @@
-interface Certificate {
+export interface Certificate {
   idSertifikat: string | null;
   title: string;
   image: string;

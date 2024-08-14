@@ -5,6 +5,10 @@ export interface MenuItem {
 
 const menuListItem: MenuItem[] = [
   {
+    name: 'Home',
+    links: '/',
+  },
+  {
     name: 'About Me',
     links: '/about',
   },
@@ -12,10 +16,7 @@ const menuListItem: MenuItem[] = [
     name: 'Experience',
     links: '/experience',
   },
-  {
-    name: 'Skills',
-    links: '/skills',
-  },
+
   {
     name: 'Project',
     links: '/project',
