@@ -11,7 +11,7 @@ const certificates: Certificate[] = [
   {
     idSertifikat: '6892070',
     title: 'Magang MSIB - Full Stack Developer',
-    image: '/images/',
+    image: '/images/sertifikat_magang_msib_5.png',
     link: null,
     startDate: '31 Desember 2023',
     endDate: '-',
@@ -19,7 +19,7 @@ const certificates: Certificate[] = [
   {
     idSertifikat: '6892070',
     title: 'Magang MSIB - Full Stack Laravel Developer',
-    image: '/images/',
+    image: '/images/sertifikat_magang_msib_3.png',
     link: null,
     startDate: '27 Desember 2023',
     endDate: '-',
@@ -27,7 +27,7 @@ const certificates: Certificate[] = [
   {
     idSertifikat: '1OP8N4VV2XQK',
     title: 'Menjadi React Web Developer Expert',
-    image: '/images/',
+    image: '/images/sertifikat_course_418_1290476_220124160502-1.png',
     link: 'https://www.dicoding.com/certificates/1OP8N4VV2XQK',
     startDate: 'Jan 22, 2024',
     endDate: 'Jan 22, 2027',
@@ -35,7 +35,7 @@ const certificates: Certificate[] = [
   {
     idSertifikat: '07Z65VNJMXQR',
     title: 'Menjadi Front-End Web Developer Expert',
-    image: '/images/',
+    image: '/images/sertifikat_course_219_1290476_020821152705.png',
     link: 'https://www.dicoding.com/certificates/07Z65VNJMXQR',
     startDate: 'Aug 2, 2021',
     endDate: 'Aug 2, 2024',
@@ -43,7 +43,7 @@ const certificates: Certificate[] = [
   {
     idSertifikat: '1RXY1WM29PVM',
     title: 'Menjadi Linux System Administrator',
-    image: '/images/',
+    image: '/images/sertifikat_course_423_1290476_120224153354-1.png',
     link: 'https://www.dicoding.com/certificates/1RXY1WM29PVM',
     startDate: 'Feb 12, 2024',
     endDate: 'Feb 12, 2027',
@@ -83,7 +83,7 @@ const certificates: Certificate[] = [
   {
     idSertifikat: 'JLX1L0636X72',
     title: 'Belajar Dasar-Dasar DevOps',
-    image: '/images/',
+    image: '/images/sertifikat_course_382_1290476_151022122343-1.png',
     link: 'https://www.dicoding.com/certificates/JLX1L0636X72',
     startDate: 'Oct 15, 2022',
     endDate: 'Oct 15, 2025',
@@ -99,7 +99,7 @@ const certificates: Certificate[] = [
   {
     idSertifikat: 'MRZM8R5LLZYQ',
     title: 'Belajar Implementasi CI/CD',
-    image: '/images/',
+    image: '/images/sertifikat_course_428_1290476_170224225847-1.png',
     link: 'https://www.dicoding.com/certificates/MRZM8R5LLZYQ',
     startDate: 'Feb 17, 2024',
     endDate: 'Feb 17, 2027',
@@ -107,7 +107,7 @@ const certificates: Certificate[] = [
   {
     idSertifikat: 'QLZ94Y3M2P5D',
     title: 'Belajar Membangun Arsitektur Microservices',
-    image: '/images/',
+    image: '/images/sertifikat_course_433_1290476_040324060800-1.png',
     link: 'https://www.dicoding.com/certificates/QLZ94Y3M2P5D',
     startDate: 'Mar 4, 2024',
     endDate: 'Mar 4, 2027',
