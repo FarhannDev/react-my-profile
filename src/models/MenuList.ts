@@ -5,20 +5,20 @@ export interface MenuItem {
 
 const menuListItem: MenuItem[] = [
   {
-    name: 'Home',
+    name: 'Beranda',
     links: '/',
   },
   {
-    name: 'About Me',
+    name: 'Tentang Saya',
     links: '/about',
   },
   {
-    name: 'Experience',
+    name: 'Pengalaman',
     links: '/experience',
   },
 
   {
-    name: 'Project',
+    name: 'Portofolio',
     links: '/project',
   },
 ];

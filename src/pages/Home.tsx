@@ -20,19 +20,8 @@ const Home = () => {
         </div>
 
         <div className="profile-summary">
-          <AboutSummaryHeading heading="About Me" />
-          <AboutSummaryText
-            text="  I am Farhan, I am a final semester students at Bina Sarana
-            Informatika University, majoring in Informatics. I have interest and
-            skills in web development, both Front-End and Back-End. During my
-            studies I took part in the Independent Learning Independent Campus
-            program from the Indonesian Ministry of Education and Culture, which
-            broadened my horizons in the world of technology and increased my
-            ability to adapt to a dynamic work environment. I have good
-            communication skills, am easy to socialize with, and always take
-            high initiative in solving problems. I like working independently or
-            in a team and am always interested in learning new things."
-          />
+          <AboutSummaryHeading heading="Tentang Saya" />
+          <AboutSummaryText text=" Saya Farhan, saya mahasiswa semester akhir Universitas Bina Sarana Informatika jurusan Informatika. Saya memiliki minat dan keterampilan dalam pengembangan web, baik Front-End maupun Back-End. Selama kuliah saya mengikuti program Kampus Merdeka Belajar Merdeka dari Kementerian Pendidikan dan Kebudayaan RI yang memperluas wawasan saya dalam dunia teknologi dan meningkatkan kemampuan saya dalam beradaptasi dengan lingkungan kerja yang dinamis. Saya mempunyai kemampuan komunikasi yang baik, mudah bersosialisasi, dan selalu mempunyai inisiatif tinggi dalam menyelesaikan masalah. Saya suka bekerja mandiri atau dalam tim dan selalu tertarik mempelajari hal-hal baru." />
           <div className="profile-summary__action">
             <div className="d-flex justify-content-start align-content-start g-3">
               <AboutSummaryActionButton name="Download Cv" links="/" icons="" />

@@ -10,7 +10,7 @@ const TopNavigation = () => (
   >
     <Container className="navbar-container__items ">
       <Navbar.Brand href="/" className="navbar-brand__text">
-        Farhan Portofolio
+        Farhan
       </Navbar.Brand>
 
       <Nav className="me-auto justify-content-start">
@@ -18,7 +18,7 @@ const TopNavigation = () => (
           <Link
             key={+idx}
             to={menuItem.links}
-            className="nav-link custom-nav__link mx-md-2 "
+            className="nav-link custom-nav__link mx-md-3 "
           >
             {menuItem.name}
           </Link>
