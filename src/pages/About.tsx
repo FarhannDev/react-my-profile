@@ -19,7 +19,7 @@ const About = () => {
                 />
                 <div className="profile-info-bio__name">Farhan</div>
                 <div className="profile-info-bio__jobs">
-                  Mahasiswa Teknik Informatika
+                  Front-End Developer
                 </div>
               </div>
             </div>

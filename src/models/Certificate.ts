@@ -51,7 +51,7 @@ const certificates: Certificate[] = [
   {
     idSertifikat: 'MRZM4YGJNXYQ',
     title: 'Belajar Membuat Aplikasi Back-End untuk Pemula',
-    image: '/images/',
+    image: '/images/sertifikat_course_261_1290476_030423150802-1.png',
     link: 'https://www.dicoding.com/certificates/MRZM4YGJNXYQ',
     startDate: 'Dec 19, 2022',
     endDate: 'Dec 19, 2025',
@@ -59,7 +59,7 @@ const certificates: Certificate[] = [
   {
     idSertifikat: 'EYX42YRRWZDL',
     title: 'Belajar Membuat Aplikasi Web dengan React',
-    image: '/images/',
+    image: '/images/sertifikat_course_403_1290476_160923174223-1.png',
     link: 'https://www.dicoding.com/certificates/EYX42YRRWZDL',
     startDate: 'Jun 14, 2022',
     endDate: 'Jun 14, 2025',
@@ -67,7 +67,7 @@ const certificates: Certificate[] = [
   {
     idSertifikat: 'MEPJL0V26Z3V',
     title: 'Belajar Membuat Front-End Web untuk Pemula',
-    image: '/images/',
+    image: '/images/sertifikat_course_315_1290476_080222124048-1.png',
     link: 'https://www.dicoding.com/certificates/MEPJL0V26Z3V',
     startDate: 'Feb 8, 2022',
     endDate: 'Feb 8, 2025',
@@ -75,7 +75,7 @@ const certificates: Certificate[] = [
   {
     idSertifikat: 'EYX4600LJPDL',
     title: 'Belajar Dasar Structured Query Language (SQL)',
-    image: '/images/',
+    image: '/images/sertifikat_course_600_1290476_210523180428-1.png',
     link: 'https://www.dicoding.com/certificates/EYX4600LJPDL',
     startDate: 'May 21, 2023',
     endDate: 'May 21, 2026',
@@ -91,7 +91,7 @@ const certificates: Certificate[] = [
   {
     idSertifikat: 'EYX49Y8NRPDL',
     title: 'Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)',
-    image: '/images/',
+    image: '/images/sertifikat_course_251_1290476_241122083333-1.png',
     link: 'https://www.dicoding.com/certificates/EYX49Y8NRPDL',
     startDate: 'Nov 24, 2022',
     endDate: 'Nov 24, 2025',
@@ -115,7 +115,7 @@ const certificates: Certificate[] = [
   {
     idSertifikat: 'EYX40LDYOPDL',
     title: 'Architecting on AWS (Membangun Arsitektur Cloud di AWS)',
-    image: '/images/',
+    image: '/images/sertifikat_course_266_1290476_080324004840-1.png',
     link: 'https://www.dicoding.com/certificates/EYX40LDYOPDL',
     startDate: 'Mar 7, 2024',
     endDate: 'Mar 7, 2027',

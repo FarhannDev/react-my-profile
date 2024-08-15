@@ -1,7 +1,15 @@
+import { useParams } from 'react-router-dom';
 import ButtonAction from '../components/shared/ButtonAction';
 import Heading from '../components/shared/Heading';
+import projects, { Project } from '../models/Project';
 
 const DetailProject = () => {
+  const { id } = useParams();
+
+  const detailProject: Project = projects.filter(
+    (project) => project.id === id
+  )[0];
+
   return (
     <section className="detailproject-section pb-5">
       <Heading title="Detail Proyek" />
@@ -10,24 +18,13 @@ const DetailProject = () => {
       <div className="detail-project-container">
         <img
           className="detail-project__image"
-          src="/images/sertifikat_magang_msib_3.png"
+          src={detailProject?.coverImage}
         />
 
         <div className="detail-project__content">
-          <Heading title="Magang MSIB Batch 5" />
+          <Heading title={detailProject?.name} />
           <div className="detail-project__content-description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius est
-            laborum quibusdam laudantium, eligendi eos dignissimos voluptatibus
-            nobis repellendus cupiditate nisi alias. Delectus, nihil! Porro
-            corrupti, ipsam ea maxime, repudiandae rem id quod harum dicta
-            soluta corporis! Iusto maiores, quaerat ratione, eius totam
-            perferendis officia laudantium dicta, fuga incidunt cumque
-            asperiores voluptatem quo ducimus eos libero velit molestias vero
-            id. Molestiae illum dolorem iusto tempore beatae delectus, quod
-            aliquid architecto animi voluptates. Sapiente incidunt reiciendis
-            exercitationem fugiat voluptates! Quam saepe beatae magni rerum cum
-            magnam sapiente repudiandae ipsum, perferendis, delectus nam alias.
-            Autem, ipsum. Illum doloremque dicta asperiores beatae molestias.
+            {detailProject?.description}
           </div>
 
           <div className="detail-project__content-action">
@@ -35,7 +32,7 @@ const DetailProject = () => {
               isBlank
               isDownload={false}
               name="Tampilkan Proyek"
-              links="https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_iframe"
+              links={detailProject?.links}
               icons=""
             />
           </div>

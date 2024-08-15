@@ -23,7 +23,7 @@ const education: Education[] = [
     startDate: '2017',
     endDate: '2020',
     description:
-      'Graduate of SMK 10 November South Tambun majoring in Computer & Network Engineering. Learn how to install an operation system / OS on a PC, configure a LAN network using a proxy, build a LAN network, repair hardware & software.',
+      'Lulusan SMK 10 November Tambun Selatan jurusan Teknik Komputer & Jaringan. Pelajari cara menginstal sistem operasi / OS pada PC, mengkonfigurasi jaringan LAN menggunakan proxy, membangun jaringan LAN, memperbaiki perangkat keras & perangkat lunak.',
     ipk: '',
   },
 ];

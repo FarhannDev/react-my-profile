@@ -22,7 +22,7 @@
 
 .portofolio-list__items-image {
   width: 100%;
-  height: auto;
+  height: 200px;
   border-radius: 8px 8px 0 0;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -88,11 +88,19 @@
   .portofolio-list__items {
     flex: 1 1 calc(50% - 40px); /* Beralih ke dua kolom pada layar yang lebih kecil */
   }
+
+  .portofolio-list__items-image {
+    height: auto;
+  }
 }
 
 @media (max-width: 500px) {
   .portofolio-list__items {
     flex: 1 1 100%; /* Beralih ke satu kolom pada layar yang sangat kecil */
+  }
+
+  .portofolio-list__items-image {
+    height: auto;
   }
 }
 
@@ -106,7 +114,7 @@
 }
 
 .detail-project__image {
-  width: 100%;
+  width: 500px;
   height: 350px;
   border-radius: 12px;
   -webkit-background-size: cover;
