@@ -81,3 +81,50 @@ body {
   margin-bottom: 13px;
   text-transform: capitalize;
 }
+
+.section-portofolio {
+  margin-bottom: 50px;
+}
+
+.bn632-hover {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  padding: 6px;
+  height: 44px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 50px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.bn632-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.bn632-hover:focus {
+  outline: none;
+}
+
+.bn632-hover.bn28 {
+  background-image: linear-gradient(
+    to right,
+    #eb3941,
+    #f15e64,
+    #e14e53,
+    #e2373f
+  );
+  box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+}

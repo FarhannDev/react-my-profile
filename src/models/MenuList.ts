@@ -19,7 +19,7 @@ const menuListItem: MenuItem[] = [
 
   {
     name: 'Portofolio',
-    links: '/project',
+    links: '/portofolio',
   },
 ];
 
