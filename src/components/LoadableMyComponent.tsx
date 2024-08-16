@@ -79,6 +79,12 @@ const EducationListItem = Loadable({
   loading: Loading,
 });
 
+const AboutProfileInfo = Loadable({
+  loader: () =>
+    import('./ui/aboutme/AboutProfileInfo').then((module) => module.default),
+  loading: Loading,
+});
+
 export {
   Heading,
   ButtonAction,
@@ -93,4 +99,5 @@ export {
   EducationListItem,
   AboutSummaryHeading,
   AboutSummaryText,
+  AboutProfileInfo,
 };
