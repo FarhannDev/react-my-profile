@@ -2,6 +2,7 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import { TopNavigation } from '../components/LoadableMyComponent';
+import BottomNavigation from '../components/ui/navbar/BottomNavigation';
 
 const RootLayout: React.FC = () => {
   return (
@@ -15,6 +16,8 @@ const RootLayout: React.FC = () => {
         </Container>
       </main>
       {/* Rendered Content End */}
+
+      <BottomNavigation />
     </>
   );
 };

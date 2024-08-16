@@ -183,3 +183,19 @@ body::-webkit-scrollbar-thumb {
   );
   box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
 }
+
+.footer-container {
+  width: 100%;
+  border-top: 1px solid #212529;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 20px;
+}
+
+.footer-text-copy {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
