@@ -37,7 +37,7 @@ body {
 
 .navbar.transparent.navbar-inverse {
   width: 100%;
-  height: 60px;
+  /* height: 60px; */
   background: transparent;
   backdrop-filter: blur(10px);
   box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
@@ -58,6 +58,31 @@ body {
   font-weight: 400;
 }
 
+.navbar .navbar-toggler {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  font-size: 18px;
+}
+
+.navbar .navbar-toggler:focus {
+  transition: ease-in-out 500ms;
+}
+
+.navbar .navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none !important;
+  box-shadow: none;
+  border: 0;
+}
+
+.navbar .navbar-collapse {
+  -webkit-transition: background-color 3000ms ease-in !important;
+  -moz-transition: background-color 3000ms ease-in !important;
+  -o-transition: background-color 3000ms ease-in !important;
+  transition: background-color 3000ms ease-in !important;
+  /* margin-left: 10px; */
+}
 .profile-section {
   width: 100%;
   height: auto;
