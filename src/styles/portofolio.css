@@ -1,0 +1,176 @@
+.portofolio-list {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.portofolio-list__items {
+  flex: 1 1 calc(33.333% - 40px); /* 33.333% untuk tiga kolom, dikurangi jarak antar item */
+  min-width: 250px; /* Memastikan ukuran minimal agar tidak terlalu kecil */
+  box-sizing: border-box;
+  height: auto;
+  /* padding: 20px; */
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #141414;
+  background-color: #141414;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.portofolio-list__items-image {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px 8px 0 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 13px;
+  margin: 0 auto;
+  transition: ease 300ms;
+  cursor: pointer;
+  margin-bottom: 13px;
+}
+
+.portofolio-list__items-name {
+  display: -webkit-box;
+  width: auto;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  color: var(--Font-600, #fff);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  padding-left: 8px;
+}
+
+.portofolio-list__items-date {
+  padding-left: 8px;
+  color: #f9f3f3;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 15.6px */
+  margin-bottom: 14px;
+}
+
+.portofolio-list__items-description {
+  padding-top: 6px;
+  padding-left: 8px;
+  /* padding-right: 8px; */
+  display: -webkit-box;
+  width: auto;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: var(--Font-600, #fff);
+  text-overflow: ellipsis;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 19.2px */
+  margin-bottom: 20px;
+}
+
+/* Media queries untuk menyesuaikan layout pada ukuran layar lebih kecil */
+@media (max-width: 800px) {
+  .portofolio-list__items {
+    flex: 1 1 calc(50% - 40px); /* Beralih ke dua kolom pada layar yang lebih kecil */
+  }
+
+  .portofolio-list__items-image {
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .portofolio-list__items {
+    flex: 1 1 100%; /* Beralih ke satu kolom pada layar yang sangat kecil */
+  }
+
+  .portofolio-list__items-image {
+    height: auto;
+  }
+}
+
+.detail-project-container {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding-top: 13px;
+}
+
+.detail-project__image {
+  width: 500px;
+  height: 350px;
+  border-radius: 12px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 13px;
+  margin: 0 auto;
+  transition: ease 300ms;
+  margin-bottom: 13px;
+}
+
+@media (max-width: 800px) {
+  .detail-project-container {
+    gap: 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1 1 calc(50% - 40px); /* Beralih ke dua kolom pada layar yang lebih kecil */
+  }
+}
+@media (max-width: 500px) {
+  .detail-project-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1 1 100%; /* Beralih ke satu kolom pada layar yang sangat kecil */
+  }
+}
+
+.detail-project__content {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+}
+
+.detail-project__content-description {
+  overflow: hidden;
+  color: var(--Font-600, #fff);
+  text-overflow: ellipsis;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: start;
+}
+
+.detail-project__content-action {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: start;
+  align-content: start;
+  flex-direction: column;
+  margin-top: 16px;
+}

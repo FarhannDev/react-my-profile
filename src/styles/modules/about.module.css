@@ -1,0 +1,39 @@
+.profileSummaryHeading {
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  margin-bottom: 13px;
+  text-transform: capitalize;
+}
+
+.profileSummaryText {
+  color: #fff;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.profileSummaryAction {
+  display: block;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.profileSummaryActionButton {
+  color: var(--Background, #fff);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  border-radius: 12px;
+  background: var(--Primary-600, #d71149);
+  text-decoration: none;
+}

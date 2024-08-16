@@ -1,0 +1,196 @@
+.profile-info-bio {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.profile-info-bio__image {
+  width: 200px;
+  height: 200px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin-bottom: 13px;
+  margin: 0 auto;
+  border: 3px solid #eb3941;
+  filter: brightness(75%);
+  transition: ease 300ms;
+  cursor: pointer;
+}
+
+.profile-info-bio__name {
+  padding-top: 13px;
+  color: var(--Background, #fff);
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  text-transform: uppercase;
+}
+.profile-info-bio__jobs {
+  color: #eb3941;
+  padding-top: 13px;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 24px */
+  text-transform: uppercase;
+}
+
+.profile-summary {
+  display: block;
+  width: 100%;
+  /* padding: 20px; */
+  margin-top: 3em;
+  /* margin-bottom: 3em; */
+}
+
+.profile-summary .profile-summary__heading {
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  margin-bottom: 13px;
+  text-transform: capitalize;
+}
+
+.profile-summary .profile-summary__text {
+  color: #fff;
+  text-align: justify;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33.3px;
+}
+
+/* 
+  profile-summary__action
+*/
+.profile-summary__action {
+  display: block;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.profile-summary__action .profile-summary__action__button {
+  color: var(--Background, #fff);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  border-radius: 12px;
+  background: var(--Primary-600, #d71149);
+}
+
+.about-education__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.about-education__list-item {
+  padding: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #141414;
+  background-color: #141414;
+}
+
+.about-education__list-item-campus {
+  color: var(--Font-600, #fff);
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.about-education__list-item-prodi {
+  color: var(--Font-600, #fff);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.about-education__list-item-date {
+  color: var(--Font-600, #fff);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.about-education__list-item-description {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  align-self: stretch;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.8);
+
+  text-align: start;
+  text-overflow: ellipsis;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 18px */
+}
+
+.sertifikasi-list {
+  display: flex;
+  justify-content: start;
+  align-content: start;
+  gap: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+}
+
+.sertifikasi-list__item {
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.sertifikasi-list__item-image {
+  width: 350px;
+  height: 250px;
+  border-radius: 8px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 13px;
+  margin: 0 auto;
+  transition: ease 300ms;
+  cursor: pointer;
+}
