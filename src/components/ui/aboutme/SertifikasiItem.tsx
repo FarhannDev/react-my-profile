@@ -1,12 +1,19 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Certificate } from '../../../models/Certificate';
 
 type SertifikasiItemProps = Certificate;
 
-const SertifikasiItem: React.FC<SertifikasiItemProps> = ({ image }) => {
+const SertifikasiItem: React.FC<SertifikasiItemProps> = ({ title, image }) => {
   return (
     <div className="sertifikasi-list__item">
-      <img className="sertifikasi-list__item-image" src={image} />
+      <LazyLoadImage
+        alt={title}
+        src={image}
+        effect="blur"
+        loading="lazy"
+        className="sertifikasi-list__item-image"
+      />
     </div>
   );
 };

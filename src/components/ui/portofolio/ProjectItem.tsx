@@ -1,4 +1,5 @@
 import React from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-router-dom';
 import { Project } from '../../../models/Project';
 import { postedAt } from '../../../utils/formattedDate';
@@ -15,10 +16,12 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   return (
     <div className="portofolio-list__items">
       <Link to={`/portofolio/${id}/project`}>
-        <img
-          className="portofolio-list__items-image"
-          src={coverImage}
+        <LazyLoadImage
           alt={name}
+          src={coverImage}
+          effect="blur"
+          loading="lazy"
+          className="portofolio-list__items-image"
         />
       </Link>
 

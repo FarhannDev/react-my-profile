@@ -1,5 +1,5 @@
 import education from '../../../models/Education';
-import EducationItem from './EducationItem';
+import { EducationItem } from '../../LoadableMyComponent';
 
 const EducationListItem = () => {
   return (

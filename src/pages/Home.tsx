@@ -1,6 +1,8 @@
-import AboutSummaryHeading from '../components/ui/aboutme/AboutSummaryHeading';
-import AboutSummaryText from '../components/ui/aboutme/AboutSummaryText';
-import ButtonAction from '../components/shared/ButtonAction';
+import {
+  AboutSummaryHeading,
+  AboutSummaryText,
+  ButtonAction,
+} from '../components/LoadableMyComponent';
 
 const Home = () => {
   return (
@@ -28,7 +30,7 @@ const Home = () => {
                 isBlank={false}
                 isDownload={true}
                 name="Unduh CV"
-                links="/images/profile.png"
+                links="/uploads/download_farhan_cv_2024.pdf"
                 icons=""
               />
               <ButtonAction

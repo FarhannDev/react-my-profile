@@ -1,6 +1,6 @@
 import { Row, Col } from 'react-bootstrap';
 import { Experience, experience } from '../../../models/Experience';
-import ExperienceItem from './ExperienceItem';
+import { ExperienceItem } from '../../LoadableMyComponent';
 
 const ExperienceListItem = () => {
   const items: Experience[] = experience;

@@ -1,5 +1,5 @@
 import projects from '../../../models/Project';
-import ProjectItem from './ProjectItem';
+import { ProjectItem } from '../../LoadableMyComponent';
 
 const ProjectListItem = () => {
   return (

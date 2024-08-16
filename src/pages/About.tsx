@@ -1,9 +1,11 @@
 import { Col, Row } from 'react-bootstrap';
-import AboutSummaryHeading from '../components/ui/aboutme/AboutSummaryHeading';
-import AboutSummaryText from '../components/ui/aboutme/AboutSummaryText';
-import Heading from '../components/shared/Heading';
-import EducationListItem from '../components/ui/aboutme/EducationListItem';
-import SertifikasiListItem from '../components/ui/aboutme/SertifikasiListItem';
+import {
+  AboutSummaryHeading,
+  AboutSummaryText,
+  EducationListItem,
+  Heading,
+  SertifikasiListItem,
+} from '../components/LoadableMyComponent';
 
 const About = () => {
   return (
@@ -25,7 +27,7 @@ const About = () => {
             </div>
             <div className="profile-summary">
               <AboutSummaryHeading heading="Tentang Saya" />
-              <AboutSummaryText text=" Saya Farhan, saya mahasiswa semester akhir Universitas Bina Sarana Informatika jurusan Informatika. Saya memiliki minat dan keterampilan dalam pengembangan web, baik Front-End maupun Back-End. Selama kuliah saya mengikuti program Kampus Merdeka Belajar Merdeka dari Kementerian Pendidikan dan Kebudayaan RI yang memperluas wawasan saya dalam dunia teknologi dan meningkatkan kemampuan saya dalam beradaptasi dengan lingkungan kerja yang dinamis. Saya mempunyai kemampuan komunikasi yang baik, mudah bersosialisasi, dan selalu mempunyai inisiatif tinggi dalam menyelesaikan masalah. Saya suka bekerja mandiri atau dalam tim dan selalu tertarik mempelajari hal-hal baru." />
+              <AboutSummaryText text=" Saya Farhan, saya mahasiswa semester akhir di Universitas Bina Sarana Informatika jurusan Informatika. Saya memiliki minat dan keterampilan dalam pengembangan web, baik Front-End maupun Back-End. Selama kuliah saya mengikuti program Kampus Merdeka Belajar Merdeka dari Kementerian Pendidikan dan Kebudayaan RI yang memperluas wawasan saya dalam dunia teknologi dan meningkatkan kemampuan saya dalam beradaptasi dengan lingkungan kerja yang dinamis. Saya mempunyai kemampuan komunikasi yang baik, mudah bersosialisasi, dan selalu mempunyai inisiatif tinggi dalam menyelesaikan masalah. Saya suka bekerja mandiri atau dalam tim dan selalu tertarik mempelajari hal-hal baru." />
             </div>
           </Col>
         </Row>
