@@ -4,7 +4,7 @@ import ExperienceListItem from '../components/ui/experience/ExperienceListItem';
 const Experience = () => {
   return (
     <>
-      <section className="section-experience">
+      <section className="section-experience animate__animated animate__jackInTheBox">
         <Heading title="Pengalaman" />
         <ExperienceListItem />
       </section>

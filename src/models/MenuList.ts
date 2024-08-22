@@ -8,10 +8,7 @@ const menuListItem: MenuItem[] = [
     name: 'Beranda',
     links: '/',
   },
-  {
-    name: 'Tentang Saya',
-    links: '/about',
-  },
+
   {
     name: 'Pengalaman',
     links: '/experience',
@@ -20,6 +17,14 @@ const menuListItem: MenuItem[] = [
   {
     name: 'Portofolio',
     links: '/portofolio',
+  },
+  {
+    name: 'Tentang Saya',
+    links: '/about',
+  },
+  {
+    name: 'Hubungi Saya',
+    links: '/about',
   },
 ];
 

@@ -14,7 +14,7 @@ const Home = () => {
           name="Farhan"
           jobs="Front-End Developer"
         />
-        <div className="profile-summary">
+        <div className="profile-summary animate__animated animate__lightSpeedInLeft">
           <AboutSummaryHeading heading="Ringkasan" />
           <AboutSummaryText text=" Saya Farhan, saya mahasiswa semester akhir Universitas Bina Sarana Informatika jurusan Informatika. Saya memiliki minat dan keterampilan dalam pengembangan web, baik Front-End maupun Back-End.  Saya mempunyai kemampuan komunikasi yang baik, mudah bersosialisasi, dan selalu mempunyai inisiatif tinggi dalam menyelesaikan masalah. Saya suka bekerja mandiri atau dalam tim dan selalu tertarik mempelajari hal-hal baru." />
           <div className="profile-summary__action">

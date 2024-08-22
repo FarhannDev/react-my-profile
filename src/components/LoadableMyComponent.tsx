@@ -1,10 +1,9 @@
 import Loadable from 'react-loadable';
-import React from 'react';
 
 // Komponen loading sementara
-const Loading: React.FC = () => {
-  return <div>Loading...</div>;
-};
+// const Loading: React.FC = () => {
+//   return <div>Loading...</div>;
+// };
 
 const Heading = Loadable({
   loader: () => import('./shared/Heading').then((module) => module.default),
@@ -36,19 +35,19 @@ const AboutSummaryText = Loadable({
 const ProjectItem = Loadable({
   loader: () =>
     import('./ui/portofolio/ProjectItem').then((module) => module.default),
-  loading: Loading,
+  loading: () => null,
 });
 
 const ProjectListItem = Loadable({
   loader: () =>
     import('./ui/portofolio/ProjectListItem').then((module) => module.default),
-  loading: Loading,
+  loading: () => null,
 });
 
 const ExperienceItem = Loadable({
   loader: () =>
     import('./ui/experience/ExperienceItem').then((module) => module.default),
-  loading: Loading,
+  loading: () => null,
 });
 
 const ExperienceListItem = Loadable({
@@ -56,33 +55,33 @@ const ExperienceListItem = Loadable({
     import('./ui/experience/ExperienceListItem').then(
       (module) => module.default
     ),
-  loading: Loading,
+  loading: () => null,
 });
 const SertifikasiItem = Loadable({
   loader: () =>
     import('./ui/aboutme/SertifikasiItem').then((module) => module.default),
-  loading: Loading,
+  loading: () => null,
 });
 const SertifikasiListItem = Loadable({
   loader: () =>
     import('./ui/aboutme/SertifikasiListItem').then((module) => module.default),
-  loading: Loading,
+  loading: () => null,
 });
 const EducationItem = Loadable({
   loader: () =>
     import('./ui/aboutme/EducationItem').then((module) => module.default),
-  loading: Loading,
+  loading: () => null,
 });
 const EducationListItem = Loadable({
   loader: () =>
     import('./ui/aboutme/EducationListItem').then((module) => module.default),
-  loading: Loading,
+  loading: () => null,
 });
 
 const AboutProfileInfo = Loadable({
   loader: () =>
     import('./ui/aboutme/AboutProfileInfo').then((module) => module.default),
-  loading: Loading,
+  loading: () => null,
 });
 
 export {
