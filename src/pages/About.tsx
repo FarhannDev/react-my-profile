@@ -7,10 +7,16 @@ import {
   Heading,
   SertifikasiListItem,
 } from '../components/LoadableMyComponent';
+import HTML from '../components/shared/HTML';
 
 const About = () => {
   return (
     <>
+      <HTML
+        title="Tentang Saya - Farhan Portofolio"
+        description="Daftar Pengalaman"
+        keywords="Portofolio, Farhan, Farhan Portofolio"
+      />
       <section className="about-section">
         <Row className="justify-content-start g-3 pt-5 ">
           <Col>

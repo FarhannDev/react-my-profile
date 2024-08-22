@@ -4,10 +4,16 @@ import {
   AboutProfileInfo,
   ButtonAction,
 } from '../components/LoadableMyComponent';
+import HTML from '../components/shared/HTML';
 
 const Home = () => {
   return (
     <>
+      <HTML
+        title="Beranda - Farhan Portofolio"
+        description="Daftar Pengalaman"
+        keywords="Portofolio, Farhan, Farhan Portofolio"
+      />
       <section className="profile-section">
         <AboutProfileInfo
           image="/images/profile.png"
@@ -30,7 +36,7 @@ const Home = () => {
                 isBlank={false}
                 isDownload={false}
                 name="Jelajahi"
-                links="/about"
+                links="/me"
                 icons=""
               />
             </div>

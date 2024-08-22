@@ -11,20 +11,21 @@ const menuListItem: MenuItem[] = [
 
   {
     name: 'Pengalaman',
-    links: '/experience',
+    links: '/ex',
   },
 
   {
     name: 'Portofolio',
-    links: '/portofolio',
+    links: '/porto',
   },
   {
     name: 'Tentang Saya',
-    links: '/about',
+    links: '/me',
   },
   {
     name: 'Hubungi Saya',
-    links: '/about',
+    links:
+      'https://api.whatsapp.com/send/?phone=6282298717364&text&type=phone_number&app_absent=0',
   },
 ];
 

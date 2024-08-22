@@ -1,6 +1,5 @@
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { Certificate } from '../../../models/Certificate';
 
 type SertifikasiItemProps = Certificate;
 
