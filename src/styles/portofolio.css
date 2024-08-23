@@ -40,7 +40,7 @@
   display: -webkit-box;
   width: auto;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 2;
   overflow: hidden;
   text-overflow: ellipsis;
 
@@ -51,6 +51,7 @@
   font-weight: 500;
   line-height: 22px;
   padding-left: 8px;
+  margin-bottom: 13px;
 }
 
 .portofolio-list__items-date {
@@ -71,7 +72,7 @@
   display: -webkit-box;
   width: auto;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 3;
   overflow: hidden;
   color: var(--Font-600, #fff);
   text-overflow: ellipsis;

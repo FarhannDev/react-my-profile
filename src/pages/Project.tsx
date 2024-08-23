@@ -2,6 +2,8 @@ import HTML from '../components/ui/shared/HTML';
 import { MyComponentInstance } from '../components/ui/shared/MyComponent';
 
 const Project: React.FC = () => {
+  const date = new Date();
+  console.log(date.toISOString());
   return (
     <>
       <HTML

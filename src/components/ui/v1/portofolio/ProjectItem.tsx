@@ -14,7 +14,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   insertDate,
 }) => (
   <div className="portofolio-list__items animate__animated animate__bounce">
-    <Link to={`/portofolio/${id}/project`}>
+    <Link to={`/porto/${id}/project`}>
       <LazyLoadImage
         alt={name}
         src={coverImage}
