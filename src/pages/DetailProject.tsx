@@ -1,7 +1,6 @@
 import { useParams } from 'react-router-dom';
-import ButtonAction from '../components/shared/ButtonAction';
-import Heading from '../components/shared/Heading';
 import projects, { Project } from '../models/Project';
+import { MyComponentInstance } from '../components/ui/shared/MyComponent';
 
 const DetailProject = () => {
   const { id } = useParams();
@@ -12,7 +11,7 @@ const DetailProject = () => {
 
   return (
     <section className="detailproject-section pb-5">
-      <Heading title="Detail Proyek" />
+      <MyComponentInstance.Heading title="Detail Proyek" />
       <hr className="text-secondary" />
 
       <div className="detail-project-container">
@@ -22,13 +21,13 @@ const DetailProject = () => {
         />
 
         <div className="detail-project__content">
-          <Heading title={detailProject?.name} />
+          <MyComponentInstance.Heading title={detailProject?.name} />
           <div className="detail-project__content-description">
             {detailProject?.description}
           </div>
 
           <div className="detail-project__content-action">
-            <ButtonAction
+            <MyComponentInstance.ButtonAction
               isBlank
               isDownload={false}
               name="Tampilkan Proyek"

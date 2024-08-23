@@ -1,48 +1,42 @@
 import { Col, Row } from 'react-bootstrap';
-import {
-  AboutProfileInfo,
-  AboutSummaryHeading,
-  AboutSummaryText,
-  EducationListItem,
-  Heading,
-  SertifikasiListItem,
-} from '../components/LoadableMyComponent';
-import HTML from '../components/shared/HTML';
+import { MyComponentInstance } from '../components/ui/shared/MyComponent';
+import HTML from '../components/ui/shared/HTML';
 
 const About = () => {
   return (
     <>
       <HTML
-        title="Tentang Saya - Farhan Portofolio"
+        title="Tentang Saya"
         description="Daftar Pengalaman"
         keywords="Portofolio, Farhan, Farhan Portofolio"
       />
       <section className="about-section">
         <Row className="justify-content-start g-3 pt-5 ">
           <Col>
-            <AboutProfileInfo
+            <MyComponentInstance.ProfileInfo
               image="/images/profile.png"
               name="Farhan"
               jobs="Front-End Developer"
             />
-            <div className="profile-summary animate__animated animate__lightSpeedInLeft">
-              <AboutSummaryHeading heading="Tentang Saya" />
-              <AboutSummaryText text=" Saya Farhan, saya mahasiswa semester akhir di Universitas Bina Sarana Informatika jurusan Informatika. Saya memiliki minat dan keterampilan dalam pengembangan web, baik Front-End maupun Back-End. Selama kuliah saya mengikuti program Kampus Merdeka Belajar Merdeka dari Kementerian Pendidikan dan Kebudayaan RI yang memperluas wawasan saya dalam dunia teknologi dan meningkatkan kemampuan saya dalam beradaptasi dengan lingkungan kerja yang dinamis. Saya mempunyai kemampuan komunikasi yang baik, mudah bersosialisasi, dan selalu mempunyai inisiatif tinggi dalam menyelesaikan masalah. Saya suka bekerja mandiri atau dalam tim dan selalu tertarik mempelajari hal-hal baru." />
-            </div>
+
+            <MyComponentInstance.ProfileInfoAboutMe
+              headingName="Tentang Saya"
+              summary="Saya Farhan, saya mahasiswa semester akhir Universitas Bina Sarana Informatika jurusan Informatika. Saya memiliki minat dan keterampilan dalam pengembangan web, baik Front-End maupun Back-End.  Saya mempunyai kemampuan komunikasi yang baik, mudah bersosialisasi, dan selalu mempunyai inisiatif tinggi dalam menyelesaikan masalah. Saya suka bekerja mandiri atau dalam tim dan selalu tertarik mempelajari hal-hal baru."
+            />
           </Col>
         </Row>
 
         <Row className="justify-content-start g-3 pt-5 animate__animated animate__zoomInLeft animate__delay-2s">
           <Col>
-            <Heading title="Pendidikan" />
-            <EducationListItem />
+            <MyComponentInstance.Heading title="Pendidikan" />
+            <MyComponentInstance.EducationItemList />
           </Col>
         </Row>
 
         <Row className="justify-content-start g-3 pt-5 animate__animated animate__zoomInUp animate__delay-2s">
           <Col>
-            <Heading title="Sertifikasi dan Penghargaan" />
-            <SertifikasiListItem />
+            <MyComponentInstance.Heading title="Sertifikasi dan Penghargaan" />
+            <MyComponentInstance.SertifikasiListItem />
           </Col>
         </Row>
       </section>

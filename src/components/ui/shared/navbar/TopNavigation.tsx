@@ -1,6 +1,6 @@
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { menuListItem } from '../../../models/MenuList';
+import { menuListItem } from '../../../../models/MenuList';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { useState } from 'react';
 

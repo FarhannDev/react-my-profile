@@ -1,17 +1,17 @@
-import { Heading, ProjectListItem } from '../components/LoadableMyComponent';
-import HTML from '../components/shared/HTML';
+import HTML from '../components/ui/shared/HTML';
+import { MyComponentInstance } from '../components/ui/shared/MyComponent';
 
 const Project: React.FC = () => {
   return (
     <>
       <HTML
-        title="Proyek - Farhan Portofolio"
+        title="Proyek"
         description="Daftar Pengalaman"
         keywords="Portofolio, Farhan, Farhan Portofolio"
       />
       <section className="section-portofolio pb-5 animate__animated animate__jackInTheBox">
-        <Heading title="Proyek" />
-        <ProjectListItem />
+        <MyComponentInstance.Heading title="Proyek" />
+        <MyComponentInstance.ProjectListItem />
       </section>
     </>
   );
