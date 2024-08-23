@@ -1,6 +1,6 @@
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import { menuListItem } from '../../../models/MenuList';
+import { menuListItem } from '../../../../models/MenuList';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { useState } from 'react';
 
@@ -36,7 +36,7 @@ const TopNavigation = () => {
                 onClick={closeNavbar}
                 key={+idx}
                 to={menuItem.links}
-                className="nav-link custom-nav__link mx-md-3 "
+                className="nav-link custom-nav__link mx-md-2 "
               >
                 {menuItem.name}
               </Link>

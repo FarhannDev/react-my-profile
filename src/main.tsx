@@ -7,6 +7,7 @@ import './styles/about.css';
 import './styles/experience.css';
 import './styles/portofolio.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'animate.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

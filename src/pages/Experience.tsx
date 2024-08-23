@@ -1,12 +1,17 @@
-import Heading from '../components/shared/Heading';
-import ExperienceListItem from '../components/ui/experience/ExperienceListItem';
+import HTML from '../components/ui/shared/HTML';
+import { MyComponentInstance } from '../components/ui/shared/MyComponent';
 
 const Experience = () => {
   return (
     <>
-      <section className="section-experience">
-        <Heading title="Pengalaman" />
-        <ExperienceListItem />
+      <HTML
+        title="Pengalaman"
+        description="Daftar Pengalaman"
+        keywords="Portofolio, Farhan, Farhan Portofolio"
+      />
+      <section className="section-experience animate__animated animate__jackInTheBox">
+        <MyComponentInstance.Heading title="Pengalaman" />
+        <MyComponentInstance.ExperienceListItem />
       </section>
     </>
   );

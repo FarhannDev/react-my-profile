@@ -1,5 +1,5 @@
-import certificates from '../../../models/Certificate';
-import { SertifikasiItem } from '../../LoadableMyComponent';
+import certificates from '../../../../models/Certificate';
+import SertifikasiItem from './SertifikasiItem';
 
 const SertifikasiListItem = () => {
   return (
