@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import projects, { Project } from '../models/Project';
+import projects from '../models/Project';
 import { MyComponentInstance } from '../components/ui/shared/MyComponent';
 
 const DetailProject = () => {

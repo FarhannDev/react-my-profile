@@ -1,7 +1,6 @@
 import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-router-dom';
-import { Project } from '../../../../models/Project';
 import { postedAt } from '../../../../utils/formattedDate';
 
 type ProjectItemProps = Project;

@@ -1,12 +1,3 @@
-export interface Education {
-  campus: string;
-  studyName: string;
-  startDate: string;
-  endDate: string;
-  description: string;
-  ipk: number | string;
-}
-
 const education: Education[] = [
   {
     campus: 'UNIVERSITAS BINA SARANA INFORMATIKA',
@@ -14,7 +5,7 @@ const education: Education[] = [
     startDate: '2020',
     endDate: '2024',
     description:
-      'I am a 5th semester computer science student at Bina Informatics University. I am currently participating in the MBKM program from the Ministry of Education and Culture. I am someone who really likes and studies current technology. The technologies studied are JavaScript for the frontend and PHP for the backend.',
+      'lulusan Informatika dari Universitas Bina Sarana Informatika. Saya berpengalaman sebagai Fullstack Developer selama 1 tahun dalam program magang bersertifikat Kampus Merdeka, di mana saya mengerjakan berbagai proyek menggunakan teknologi seperti React dan Laravel dalam mengembangkan aplikasi web yang responsif dan user-friendly. ',
     ipk: 3.91,
   },
   {

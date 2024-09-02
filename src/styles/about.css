@@ -195,3 +195,12 @@
   transition: ease 300ms;
   cursor: pointer;
 }
+
+.profile-info-bio__social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3px;
+  padding-top: 13px;
+}

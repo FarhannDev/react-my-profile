@@ -1,17 +1,16 @@
-import HTML from '../components/ui/shared/HTML';
 import { MyComponentInstance } from '../components/ui/shared/MyComponent';
+import HTML from '../components/ui/shared/HTML';
 
 const Project: React.FC = () => {
-  const date = new Date();
-  console.log(date.toISOString());
   return (
     <>
       <HTML
-        title="Proyek"
+        title="Portofolio - Farhan"
         description="Daftar Pengalaman"
         keywords="Portofolio, Farhan, Farhan Portofolio"
       />
-      <section className="section-portofolio pb-5 animate__animated animate__jackInTheBox">
+
+      <section className="section-portofolio pb-5 ">
         <MyComponentInstance.Heading title="Proyek" />
         <MyComponentInstance.ProjectListItem />
       </section>
