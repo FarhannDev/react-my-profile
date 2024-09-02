@@ -1,17 +1,5 @@
 import { nanoid } from 'nanoid';
 
-export interface Project {
-  id: string;
-  name: string;
-  startDate: string;
-  endDate: string;
-  description: string;
-  links: string;
-  type: string;
-  coverImage: string;
-  insertDate: string;
-}
-
 const projects: Project[] = [
   {
     id: nanoid(16),
@@ -44,7 +32,7 @@ const projects: Project[] = [
     startDate: 'Feb 2024',
     endDate: 'Feb 2024',
     description:
-      'Proyek Deploy Aplikasi Item App dengan Docker Compose adalah proyek pertama dari pembelajaran Belajar Membangun Arsitektur Microservices. Proyek ini Menggunakan Starter Project (Item App), Membuat Berkas Dockerfile, Membuat Script untuk Build dan Push Docker Image dan Menggunakan Docker Compose',
+      'Proyek Deploy Aplikasi Item App dengan Docker Compose adalah proyek pertama dari pembelajaran Belajar Membangun Arsitektur Microservices. Proyek ini Menggunakan Starter Project (Item App), Membuat Berkas Dockerfile, Membuat Script untuk Build dan Push Docker Image dan Menggunakan Docker Compose.',
     links: 'https://github.com/FarhannDev/a433-microservices',
     type: 'DevOps',
     insertDate: '2024-08-23T08:02:49.926Z',

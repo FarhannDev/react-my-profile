@@ -1,5 +1,4 @@
-import React from 'react';
-import { Education } from '../../../../models/Education';
+import * as React from 'react';
 
 type EducationItemProps = Education;
 

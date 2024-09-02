@@ -1,8 +1,3 @@
-export interface MenuItem {
-  name: string;
-  links: string;
-}
-
 const menuListItem: MenuItem[] = [
   {
     name: 'Beranda',

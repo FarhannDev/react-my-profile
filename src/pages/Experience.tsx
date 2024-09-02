@@ -5,11 +5,11 @@ const Experience = () => {
   return (
     <>
       <HTML
-        title="Pengalaman"
+        title="Pengalaman - Farhan"
         description="Daftar Pengalaman"
         keywords="Portofolio, Farhan, Farhan Portofolio"
       />
-      <section className="section-experience animate__animated animate__jackInTheBox">
+      <section className="section-experience">
         <MyComponentInstance.Heading title="Pengalaman" />
         <MyComponentInstance.ExperienceListItem />
       </section>

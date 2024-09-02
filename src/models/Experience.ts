@@ -1,12 +1,3 @@
-export interface Experience {
-  company: string;
-  job: string;
-  location: string;
-  startDate: string;
-  endDate: string;
-  description: string;
-}
-
 const experience: Experience[] = [
   {
     company: 'PT Citi Asia Internasional',

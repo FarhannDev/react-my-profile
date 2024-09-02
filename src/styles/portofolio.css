@@ -136,12 +136,18 @@
     flex-direction: column;
     flex: 1 1 calc(50% - 40px); /* Beralih ke dua kolom pada layar yang lebih kecil */
   }
+  .detail-project__image {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .detail-project-container {
     flex-wrap: wrap;
     flex-direction: column;
     flex: 1 1 100%; /* Beralih ke satu kolom pada layar yang sangat kecil */
+  }
+  .detail-project__image {
+    width: 100%;
   }
 }
 

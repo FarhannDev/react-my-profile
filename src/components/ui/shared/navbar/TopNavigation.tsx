@@ -20,9 +20,10 @@ const TopNavigation = () => {
       expanded={expanded}
     >
       <Container className="navbar-container__items ">
-        <Navbar.Brand href="/" className="navbar-brand__text">
+        <Link to="/" className="navbar-brand navbar-brand__text">
           Farhan
-        </Navbar.Brand>
+        </Link>
+
         <Navbar.Toggle
           onClick={() => setExpanded(expanded ? false : true)}
           aria-controls="responsive-navbar-nav"
