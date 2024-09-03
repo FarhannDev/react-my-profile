@@ -28,6 +28,7 @@ const socialIcons: SocialIcon[] = [
     links: 'https://www.dicoding.com/users/farhannn18/academies',
     icons: <FaCode fontSize={22} color="white" />,
   },
+
   {
     title: 'Whats App',
     links:
