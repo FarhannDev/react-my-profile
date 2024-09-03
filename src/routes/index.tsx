@@ -6,6 +6,7 @@ import Experience from '../pages/Experience';
 import About from '../pages/About';
 import Project from '../pages/Project';
 import DetailProject from '../pages/DetailProject';
+import Contact from '../pages/Contact';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: '/porto/:id/project',
         element: <DetailProject />,
+      },
+      {
+        path: '/contact',
+        element: <Contact />,
       },
     ],
   },
