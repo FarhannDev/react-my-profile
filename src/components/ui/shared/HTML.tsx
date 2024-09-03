@@ -11,4 +11,5 @@ const HTML: React.FC<IProps> = ({ title, description, keywords }) => (
   </Helmet>
 );
 
+// eslint-disable-next-line react-refresh/only-export-components
 export default HTML;
