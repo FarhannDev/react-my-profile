@@ -111,6 +111,21 @@ function MyComponent() {
     loading: () => null,
   });
 
+  const ProjectSearchInput = Loadable({
+    loader: () =>
+      import('../v1/portofolio/ProjectSearchInput').then(
+        (module) => module.default
+      ),
+    loading: () => null,
+  });
+  const ProjectSearchEmpty = Loadable({
+    loader: () =>
+      import('../v1/portofolio/ProjectSearchEmpty').then(
+        (module) => module.default
+      ),
+    loading: () => null,
+  });
+
   return {
     Heading,
     TopMenuNavigation,
@@ -131,6 +146,8 @@ function MyComponent() {
     ProjectListItem,
     SertifikasiItem,
     SertifikasiListItem,
+    ProjectSearchEmpty,
+    ProjectSearchInput,
   };
 }
 
