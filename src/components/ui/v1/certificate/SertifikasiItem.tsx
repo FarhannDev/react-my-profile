@@ -1,9 +1,24 @@
-import React from 'react';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import * as React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
-type SertifikasiItemProps = Certificate;
+type Certificate = {
+  title: string;
+  image: string;
+};
+type Iprops = {
+  show: boolean;
+  showChange: (value: boolean) => void;
+};
 
-const SertifikasiItem: React.FC<SertifikasiItemProps> = ({ title, image }) => {
+type SertifikasiItemProps = Certificate & Iprops;
+
+const SertifikasiItem: React.FC<SertifikasiItemProps> = ({
+  title,
+  image,
+  show,
+  showChange,
+}) => {
   return (
     <div className="sertifikasi-list__item">
       <LazyLoadImage
@@ -12,6 +27,7 @@ const SertifikasiItem: React.FC<SertifikasiItemProps> = ({ title, image }) => {
         effect="blur"
         loading="lazy"
         className="sertifikasi-list__item-image"
+        onClick={() => showChange(show)}
       />
     </div>
   );

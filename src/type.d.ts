@@ -1,10 +1,11 @@
 interface Certificate {
-  idSertifikat: string | null;
+  idSertifikat: string;
   title: string;
   image: string;
   link: string | null;
-  startDate: string | null;
-  endDate: string | null;
+  startDate: string;
+  endDate: string;
+  pdfPreview: string | undefined;
 }
 
 interface Project {
