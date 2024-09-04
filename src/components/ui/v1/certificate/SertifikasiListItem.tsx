@@ -33,12 +33,12 @@ const SertifikasiListItem = () => {
       </div>
 
       <Modal
-        size="xl"
         show={show}
         onHide={handleClose}
         animation={true}
         scrollable
         data-bs-theme="dark"
+        fullscreen
       >
         <Modal.Header closeButton>
           <Modal.Title className="text-white fs-5 fw-normal">
