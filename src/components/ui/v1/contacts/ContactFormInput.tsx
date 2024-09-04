@@ -1,10 +1,8 @@
-import React from 'react';
+import * as React from 'react';
 import { Form } from 'react-bootstrap';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import Swal from 'sweetalert2';
-
-// type ContactFormInputProps = {};
-
+import emailjs from 'emailjs-com';
 interface IFormInput {
   name: string;
   email: string;
@@ -19,15 +17,49 @@ const ContactFormInput: React.FC = () => {
     reset,
   } = useForm<IFormInput>();
   const onSubmit: SubmitHandler<IFormInput> = (data) => {
-    console.log({ message: data });
+    const emailJsUserId: string = import.meta.env.VITE_EMAILJS_USER_ID;
+    const emailJsServiceId: string = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const emailJsTemplateId: string = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const { name, email, message } = data;
+    const emailInputData = {
+      name,
+      to_name: 'Farhan',
+      from_name: name,
+      email,
+      message,
+    };
 
-    reset(); // Mereset form setelah submit berhasil
+    if (!errors.email || !errors.name || !errors.message) {
+      emailjs
+        .send(
+          emailJsServiceId,
+          emailJsTemplateId,
+          emailInputData,
+          emailJsUserId
+        )
+        .then((response) => {
+          console.log({
+            message_success: `Email Berhasil dikirimkan: ${response.status} ${response.text}`,
+          });
+          reset(); // Mereset form setelah submit berhasil
 
-    Swal.fire({
-      title: 'Berhasil',
-      text: 'Pesan anda sudah dikirimkan',
-      icon: 'success',
-    });
+          Swal.fire({
+            title: 'Berhasil',
+            text: 'Pesan anda sudah dikirimkan',
+            icon: 'success',
+          });
+        })
+        .catch((err) => {
+          console.error({
+            message_success: `Email Gagal dikirimkan: ${err}`,
+          });
+          Swal.fire({
+            title: 'Gagal!',
+            text: 'Pesan anda tidak dapat dikirimkan',
+            icon: 'error',
+          });
+        });
+    }
   };
 
   return (
