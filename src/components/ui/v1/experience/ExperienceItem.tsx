@@ -1,5 +1,4 @@
 import React from 'react';
-import { Experience } from '../../../../models/Experience';
 
 type ExperienceItemProps = Experience;
 
