@@ -1,0 +1,33 @@
+.resume-container {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 2em;
+  margin-bottom: 3em;
+}
+
+.resume-education {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.resume-experience {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.resume-item__heading {
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  margin-bottom: 13px;
+  text-transform: capitalize;
+}

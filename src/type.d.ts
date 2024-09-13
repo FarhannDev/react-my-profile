@@ -42,3 +42,10 @@ interface MenuItem {
   name: string;
   links: string;
 }
+
+interface Skills {
+  title: string;
+  description: string;
+  image: string;
+  category?: string;
+}

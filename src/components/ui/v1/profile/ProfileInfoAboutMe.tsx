@@ -15,14 +15,14 @@ const ProfileInfoAboutme: React.FC<IProps> = ({ summary, headingName }) => {
           <MyComponentInstance.ButtonAction
             isBlank={false}
             isDownload={true}
-            name="Unduh CV"
+            name="Download CV"
             links="/uploads/download_farhan_cv_2024.pdf"
             icons=""
           />
           <MyComponentInstance.ButtonAction
             isBlank={false}
             isDownload={false}
-            name="Jelajahi"
+            name="About Me"
             links="/me"
             icons=""
           />

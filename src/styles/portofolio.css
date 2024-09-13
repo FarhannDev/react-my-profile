@@ -8,14 +8,13 @@
 
 .portofolio-list__items {
   flex: 1 1 calc(33.333% - 40px); /* 33.333% untuk tiga kolom, dikurangi jarak antar item */
-  min-width: 250px; /* Memastikan ukuran minimal agar tidak terlalu kecil */
+  min-width: 250px;
   box-sizing: border-box;
   height: auto;
-  /* padding: 20px; */
   overflow: hidden;
   border-radius: 12px;
-  border: 1px solid #141414;
-  background-color: #141414;
+  border: 1px solid #fafafa;
+  background-color: transparent;
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
     rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }
@@ -249,4 +248,12 @@
   font-weight: 400;
   line-height: 26px;
   margin-top: 10px;
+}
+
+.portofolio-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 5em;
+  margin-top: 2em;
 }

@@ -5,11 +5,11 @@ const Home = () => {
   return (
     <>
       <HTML
-        title="Beranda - Farhan"
+        title="Home - Farhan"
         description="Daftar Pengalaman"
         keywords="Portofolio, Farhan, Farhan Portofolio"
       />
-      <section className="profile-section">
+      <section className="home-container">
         <MyComponentInstance.ProfileInfo
           image="/images/profile.png"
           name="Farhan"
@@ -17,8 +17,8 @@ const Home = () => {
         />
 
         <MyComponentInstance.ProfileInfoAboutMe
-          headingName="Tentang Saya"
-          summary="Saya Farhan,  lulusan program studi Informatika dari Universitas Bina Sarana Informatika. Saya berpengalaman sebagai Fullstack Developer selama 1 tahun dalam program magang bersertifikat Kampus Merdeka. Saya memiliki minat dan keterampilan dalam pengembangan web, baik Front-End maupun Back-End.  Saya mempunyai kemampuan komunikasi yang baik, mudah bersosialisasi, dan selalu mempunyai inisiatif tinggi dalam menyelesaikan masalah. Saya suka bekerja mandiri atau dalam tim dan selalu tertarik mempelajari hal-hal baru."
+          headingName="About Me"
+          summary="Informatics graduate from Bina Sarana Informatics University with experience in website development, both frontend and backend. During college, I participated in the Merdeka Belajar Kampus Merdeka program and worked as a Full Stack Developer. I have a high enthusiasm for learning new things with high initiative and am able to work independently or in a team."
         />
       </section>
     </>

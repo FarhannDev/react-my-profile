@@ -10,7 +10,7 @@ const Experience = () => {
         keywords="Portofolio, Farhan, Farhan Portofolio"
       />
       <section className="section-experience">
-        <MyComponentInstance.Heading title="Pengalaman" />
+        <MyComponentInstance.Heading title="Pengalaman Kerja" />
         <MyComponentInstance.ExperienceListItem />
       </section>
     </>

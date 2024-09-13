@@ -34,15 +34,17 @@ const Project: React.FC = () => {
         keywords="Portofolio, Farhan, Farhan Portofolio"
       />
 
-      <section className="section-portofolio pb-5 ">
-        <MyComponentInstance.Heading title="Daftar Proyek" />
+      <div className="portofolio-container ">
+        <MyComponentInstance.Heading title="Project" />
+        <hr className="text-secondary" />
+
         <MyComponentInstance.ProjectSearchInput
-          placeholder="Cari proyek..."
+          placeholder="Search project..."
           keyword={keyword}
           keywordChange={onKeywordChangeHandler}
         />
         <MyComponentInstance.ProjectListItem items={items} />
-      </section>
+      </div>
     </>
   );
 };
