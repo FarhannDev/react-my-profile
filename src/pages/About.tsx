@@ -1,45 +1,63 @@
-import { Col, Row } from 'react-bootstrap';
 import { MyComponentInstance } from '../components/ui/shared/MyComponent';
 import HTML from '../components/ui/shared/HTML';
+import SkillsItemList from '../components/ui/v1/skills/SkillsItemList';
+import skills from '../models/Skill';
 
 const About = () => {
+  const programmingSkills = skills?.filter(
+    (skill) => skill.category === 'Programming Languages'
+  );
+
+  const frameworkSkills = skills?.filter(
+    (skill) => skill.category === 'Framework'
+  );
+  const toolsSkills = skills?.filter((skill) => skill.category === 'Tools');
+
   return (
     <>
       <HTML
-        title="Tentang Saya - Farhan"
+        title="About Me - Farhan"
         description="Daftar Pengalaman"
         keywords="Portofolio, Farhan, Farhan Portofolio"
       />
-      <section className="about-section">
-        <Row className="justify-content-start g-3 pt-5 ">
-          <Col>
-            <MyComponentInstance.ProfileInfo
-              image="/images/profile.png"
-              name="Farhan"
-              jobs="Full Stack Developer"
-            />
+      <div className="about-container">
+        <div className="about-profile-container">
+          <MyComponentInstance.ProfileInfo
+            image="/images/profile.png"
+            name="Farhan"
+            jobs="Full Stack Developer"
+          />
 
-            <MyComponentInstance.ProfileInfoAboutMe
-              headingName="Tentang Saya"
-              summary="Saya Farhan,  lulusan program studi Informatika dari Universitas Bina Sarana Informatika. Saya berpengalaman sebagai Fullstack Developer selama 1 tahun dalam program magang bersertifikat Kampus Merdeka. Saya memiliki minat dan keterampilan dalam pengembangan web, baik Front-End maupun Back-End.  Saya mempunyai kemampuan komunikasi yang baik, mudah bersosialisasi, dan selalu mempunyai inisiatif tinggi dalam menyelesaikan masalah. Saya suka bekerja mandiri atau dalam tim dan selalu tertarik mempelajari hal-hal baru."
-            />
-          </Col>
-        </Row>
+          <MyComponentInstance.ProfileInfoAboutMe
+            headingName="About Me"
+            summary="Informatics graduate from Bina Sarana Informatics University with experience in website development, both frontend and backend. During college, I participated in the Merdeka Belajar Kampus Merdeka program and worked as a Full Stack Developer. I have a high enthusiasm for learning new things with high initiative and am able to work independently or in a team."
+          />
+        </div>
 
-        <Row className="justify-content-start g-3 pt-5">
-          <Col>
-            <MyComponentInstance.Heading title="Pendidikan" />
-            <MyComponentInstance.EducationItemList />
-          </Col>
-        </Row>
+        <div className="about-skills-container">
+          <MyComponentInstance.Heading title="Skills" />
 
-        <Row className="justify-content-start g-3 pt-5 ">
-          <Col>
-            <MyComponentInstance.Heading title="Sertifikasi dan Penghargaan" />
-            <MyComponentInstance.SertifikasiListItem />
-          </Col>
-        </Row>
-      </section>
+          <div className="skills-container">
+            <div className="skills-proglang pt-3">
+              <h3 className="skills-heading">Programming Languages</h3>
+
+              <SkillsItemList skills={programmingSkills} />
+            </div>
+            <div className="skills-framework pt-3">
+              <h3 className="skills-heading">Framework</h3>
+              <SkillsItemList skills={frameworkSkills} />
+            </div>
+            <div className="skills-tools pt-3">
+              <h3 className="skills-heading">Tools</h3>
+              <SkillsItemList skills={toolsSkills} />
+            </div>
+          </div>
+        </div>
+        <div className="about-sertifikasi-container">
+          <MyComponentInstance.Heading title="Certifications & Awards" />
+          <MyComponentInstance.SertifikasiListItem />
+        </div>
+      </div>
     </>
   );
 };

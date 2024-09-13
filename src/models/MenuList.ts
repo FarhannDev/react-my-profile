@@ -1,24 +1,25 @@
 const menuListItem: MenuItem[] = [
   {
-    name: 'Beranda',
+    name: 'Home',
     links: '/',
   },
-
   {
-    name: 'Pengalaman',
-    links: '/ex',
-  },
-
-  {
-    name: 'Portofolio',
-    links: '/porto',
-  },
-  {
-    name: 'Tentang Saya',
+    name: 'About',
     links: '/me',
   },
+
   {
-    name: 'Hubungi Saya',
+    name: 'Resume',
+    links: '/resume',
+  },
+
+  {
+    name: 'Portfolio',
+    links: '/portfolio',
+  },
+
+  {
+    name: 'Contact',
     links: '/contact',
   },
 ];

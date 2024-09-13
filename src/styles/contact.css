@@ -1,3 +1,11 @@
+.contacts-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 5em;
+  margin-top: 2em;
+}
+
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -13,8 +21,8 @@
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 12px;
-  border: 1px solid #141414;
-  background-color: #141414;
+  border: 1px solid #fffafa;
+  background-color: #1d1d1d;
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
     rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 }

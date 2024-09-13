@@ -4,6 +4,8 @@ import { menuListItem } from '../../../../models/MenuList';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { useState } from 'react';
 
+import '../../../../styles/navbar.css';
+
 const TopNavigation = () => {
   const [expanded, setExpanded] = useState(false);
   const closeNavbar = () => {
@@ -37,7 +39,7 @@ const TopNavigation = () => {
                 onClick={closeNavbar}
                 key={+idx}
                 to={menuItem.links}
-                className="nav-link custom-nav__link mx-md-2 "
+                className="nav-link custom-nav__link mx-md-3 "
               >
                 {menuItem.name}
               </Link>
