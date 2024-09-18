@@ -3,6 +3,7 @@ import { Form } from 'react-bootstrap';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import Swal from 'sweetalert2';
 import emailjs from 'emailjs-com';
+import { MyComponentInstance } from '../../shared/MyComponent';
 interface IFormInput {
   name: string;
   email: string;
@@ -16,6 +17,7 @@ const ContactFormInput: React.FC = () => {
     formState: { errors },
     reset,
   } = useForm<IFormInput>();
+
   const onSubmit: SubmitHandler<IFormInput> = (data) => {
     const emailJsUserId: string = import.meta.env.VITE_EMAILJS_USER_ID;
     const emailJsServiceId: string = import.meta.env.VITE_EMAILJS_SERVICE_ID;
@@ -64,6 +66,10 @@ const ContactFormInput: React.FC = () => {
 
   return (
     <div className="contact-container">
+      <div className="contact-heading-container">
+        <MyComponentInstance.Heading title="Get in touch" />
+        <MyComponentInstance.Heading title="Feel free to contact." />
+      </div>
       <Form
         onSubmit={handleSubmit(onSubmit)}
         className="contact-forminput-container"
@@ -78,7 +84,7 @@ const ContactFormInput: React.FC = () => {
           <Form.Control
             className="contact-forminput-group__input"
             type="text"
-            placeholder="Nama Lengkap Anda"
+            placeholder="Nama"
             autoComplete="name"
             {...register('name', { required: true })}
             aria-invalid={errors.name ? 'true' : 'false'}

@@ -7,7 +7,7 @@ type IProps = { headingName: string; summary: string };
 
 const ProfileInfoAboutme: React.FC<IProps> = ({ summary, headingName }) => {
   const content = (
-    <div className="profile-summary animate__animated animate__lightSpeedInLeft">
+    <div className="profile-summary">
       <ProfileHeading heading={headingName} />
       <ProfileSummary summary={summary} />
       <div className="profile-summary__action">
@@ -16,7 +16,7 @@ const ProfileInfoAboutme: React.FC<IProps> = ({ summary, headingName }) => {
             isBlank={false}
             isDownload={true}
             name="Download CV"
-            links="/uploads/download_farhan_cv_2024.pdf"
+            links="/uploads/CV FARHAN EN.pdf"
             icons=""
           />
           <MyComponentInstance.ButtonAction

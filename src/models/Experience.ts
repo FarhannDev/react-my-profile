@@ -1,5 +1,15 @@
 const experience: Experience[] = [
   {
+    company: 'PT Winni Code Garuda Indonesia',
+    job: 'Web Developer Laravel',
+    location: 'Bandung, Jawa Barat, Indonesia',
+    startDate: 'Aug 2024',
+    endDate: 'Okt 2024',
+    description: `Create a proposal for designing an integrated e-system based on a website and explain the
+background of the project, the reasons for taking on the project, and determine the timeline
+for completing the project.`,
+  },
+  {
     company: 'PT Citi Asia Internasional',
     job: 'Full Stack Developer',
     location: 'Jakarta Selatan, Jakarta Raya, Indonesia',
