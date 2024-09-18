@@ -7,6 +7,7 @@ import Project from '../pages/Project';
 import DetailProject from '../pages/DetailProject';
 import Contact from '../pages/Contact';
 import Resume from '../pages/Resume';
+import ResumeOnline from '../pages/ResumeOnline';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: '/contact',
         element: <Contact />,
+      },
+      {
+        path: '/resume-online',
+        element: <ResumeOnline />,
       },
     ],
   },

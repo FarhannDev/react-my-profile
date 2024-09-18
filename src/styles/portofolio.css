@@ -7,16 +7,23 @@
 }
 
 .portofolio-list__items {
+  margin-bottom: 20px;
   flex: 1 1 calc(33.333% - 40px); /* 33.333% untuk tiga kolom, dikurangi jarak antar item */
   min-width: 250px;
   box-sizing: border-box;
   height: auto;
   overflow: hidden;
   border-radius: 12px;
-  border: 1px solid #fafafa;
+  border: 1px solid #393939;
   background-color: transparent;
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
     rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.portofolio-list__items:hover {
+  transition: all 250ms ease-in-out;
+  transform: translateY(10px);
+  border: 1px solid #6a64ed;
 }
 
 .portofolio-list__items-image {
@@ -201,7 +208,7 @@
   width: 100%;
   height: 44px;
   background: transparent !important;
-  border: 1px solid #f9f3f3 !important;
+  border: 1px solid #393939 !important;
   border-radius: 50px !important;
   outline: none;
   font-size: 22px;

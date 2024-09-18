@@ -22,6 +22,10 @@ const menuListItem: MenuItem[] = [
     name: 'Contact',
     links: '/contact',
   },
+  {
+    name: 'View Resume',
+    links: '/resume-online',
+  },
 ];
 
 export { menuListItem };

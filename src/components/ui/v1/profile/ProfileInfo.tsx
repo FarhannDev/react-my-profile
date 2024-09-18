@@ -40,7 +40,7 @@ const socialIcons: SocialIcon[] = [
 const ProfileInfo: React.FC<IProps> = ({ name, image, jobs }) => (
   <>
     <div className="profile-info w-100 d-flex justify-content-center align-items-center g-3">
-      <div className="profile-info-bio  animate__animated animate__zoomIn">
+      <div className="profile-info-bio ">
         <LazyLoadImage
           alt={name}
           src={image}

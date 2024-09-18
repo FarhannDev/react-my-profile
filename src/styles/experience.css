@@ -5,10 +5,21 @@
   height: auto;
   overflow: hidden;
   border-radius: 12px;
-  border: 1px solid #fafafa;
+  border: 1px solid #393939;
   background-color: transparent;
   box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
     rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  transition: all 500ms ease-in-out;
+}
+
+.experience-items:hover {
+  opacity: 1;
+  background: rgb(215, 17, 73);
+  background: radial-gradient(
+    circle,
+    rgba(215, 17, 73, 1) 0%,
+    rgba(113, 100, 237, 1) 100%
+  );
 }
 
 .experience-items__job {
@@ -32,7 +43,7 @@
 .experience-items__date {
   color: var(--Font-600, #fff);
   font-family: Poppins;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: 28px;
@@ -41,7 +52,7 @@
 .experience-items__location {
   color: var(--Font-600, #fff);
   font-family: Poppins;
-  font-size: 14px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: 28px;
@@ -59,8 +70,8 @@
   text-align: start;
   text-overflow: ellipsis;
   font-family: Poppins;
-  font-size: 14px;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 150%; /* 18px */
 }
