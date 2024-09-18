@@ -9,7 +9,7 @@ const ResumeOnline = () => {
         <hr className="text-secondary" />
 
         <div className="resume-online-preview">
-          <PdfPreview fileUrl="/uploads/CV FARHAN EN.pdf" defaultScale={1.5} />
+          <PdfPreview fileUrl="/uploads/CV FARHAN EN.pdf" scale={1.5} />
         </div>
       </div>
     </>

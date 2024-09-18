@@ -46,7 +46,7 @@ const SertifikasiListItem = () => {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <PdfPreview fileUrl={getSertifikasiPrev?.pdfPreview} />
+          <PdfPreview fileUrl={getSertifikasiPrev?.pdfPreview} scale={1.0} />
         </Modal.Body>
       </Modal>
     </>

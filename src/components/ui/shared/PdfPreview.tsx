@@ -7,9 +7,9 @@ import {
 import '@react-pdf-viewer/core/lib/styles/index.css';
 import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 
-type IProps = { fileUrl: string | undefined; defaultScale: number };
+type IProps = { fileUrl: string | undefined; scale: number };
 
-const PdfPreview: React.FC<IProps> = ({ fileUrl, defaultScale = 1.0 }) => {
+const PdfPreview: React.FC<IProps> = ({ fileUrl, scale = 1.0 }) => {
   const defaultLayoutPluginInstance: DefaultLayoutPlugin =
     defaultLayoutPlugin();
   const workerUrl: string =
@@ -23,7 +23,7 @@ const PdfPreview: React.FC<IProps> = ({ fileUrl, defaultScale = 1.0 }) => {
             fileUrl={fileUrl}
             plugins={[defaultLayoutPluginInstance]}
             enableSmoothScroll
-            defaultScale={defaultScale}
+            defaultScale={scale}
             theme={'dark'}
           />
         )}
